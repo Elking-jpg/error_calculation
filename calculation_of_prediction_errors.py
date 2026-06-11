@@ -9,10 +9,10 @@ from datetime import datetime, timezone, timedelta
 import os
 
 DB_CONFIG = {
-    "dbname": os.getenv("DB_NAME", "neondb"),
-    "user": os.getenv("DB_USER", "neondb_owner"),
-    "password": os.getenv("DB_PASSWORD", "npg_T8ZGQlMIa0dm"),
-    "host": os.getenv("DB_HOST", "ep-bold-feather-at2890k4.c-9.us-east-1.aws.neon.tech"),
+    "dbname": os.getenv("DB_NAME"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "host": os.getenv("DB_HOST"),
     "port": os.getenv("DB_PORT", "5432"),
     "sslmode": "require"
 }
